@@ -1,9 +1,8 @@
-function selectElements()
-{
-let titlejs = document.getElementById("title");
-titlejs.style.color = "blue";
-let messagejs = document.getElementsByClassName("message")[0];
-messagejs.style.color = "green";
-let paragraphs = document.getElementsByTagName("p");
-paragraphs[1].style.backgroundColor = "yellow";
-}
+document.addEventListener("DOMContentLoaded", function () {
+ let button = document.getElementById("myButton");
+ button.addEventListener("click", function () {
+ let text = document.getElementById("text");
+ text.textContent = "The text has been changed!";
+ text.style.color = "green";
+ });
+});
