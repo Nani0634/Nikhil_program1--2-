@@ -4,7 +4,12 @@
  <title>Event Listener Example</title>
 </head>
 <body>
- <h2 id="text">Click the button to change this text</h2>
- <button id="myButton">Click Me</button>
- <script src="script.js"></script> </body>
+<h2 id="text">Click the button to change this text</h2>
+<button id="myButton">Click Me</button>
+
+<script>
+document.getElementById("myButton").addEventListener("click", function () {
+    document.getElementById("text").style.color = "blue";
+});
+</script> </body>
 </html> 
